@@ -2,17 +2,23 @@ const categoryText = document.querySelector(".categoryInfoText");
 const categoryImage = document.querySelector(".categoryInfo");
 const categoryList = document.querySelector(".categoryList");
 
-//  categoryList.forEach(category => {
-    categoryList.addEventListener("mouseover", function(){
-        categoryImage.style.display = "none";
-        categoryText.style.display = "flex";
-    });
+const myUsername = document.querySelector(".username");
+const user = JSON.parse(localStorage.getItem("Username")) || "";
+// console.log(user);
+const capitalized = user.charAt(0).toUpperCase() + user.slice(1);
+myUsername.textContent = capitalized;
 
-    categoryList.addEventListener("mouseout", function(){
-        categoryImage.style.display = "block";
-        categoryText.style.display = "none";
-    });
-//  });
+//  categoryList.forEach(category => {
+//     categoryList.addEventListener("mouseover", function(){
+//         categoryImage.style.display = "none";
+//         categoryText.style.display = "flex";
+//     });
+
+//     categoryList.addEventListener("mouseout", function(){
+//         categoryImage.style.display = "block";
+//         categoryText.style.display = "none";
+//     }); up ratatouolle monster inc finding nemo incredibles son of big foot good dinosaur
+// //  });
 
 const products = [
     {
