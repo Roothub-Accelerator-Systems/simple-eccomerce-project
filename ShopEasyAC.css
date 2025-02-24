@@ -76,7 +76,7 @@ body{
 
 .nav-bar-right{
     display:flex;
-    /* background-color: green; */
+    
     margin:2rem 0;
     gap:12px;
     align-items: center;

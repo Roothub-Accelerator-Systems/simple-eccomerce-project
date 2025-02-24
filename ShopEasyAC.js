@@ -12,7 +12,7 @@ productName.innerHTML = selectedProduct.Name;
 productImg.src = selectedProduct.image;
 productPrice.innerHTML = selectedProduct.price;
 productPrice2.innerHTML = selectedProduct.price;
-productPrice3.innerHTML = selectedProduct.price;2
+productPrice3.innerHTML = selectedProduct.price;
 
 //product quantity number
 
