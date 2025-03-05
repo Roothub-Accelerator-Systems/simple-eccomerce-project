@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 5%;
+    font-family: 'Segoe UI';
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-left{
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-left .bx-menu{
+    font-size: 2.5rem;
+    padding-top: 0rem;
+}
+
+
+.nav-bar-left input{
+    display: none;
+}
+
+.nav-bar-left img{
+    width: 190px;
+    height: 80px;
+    padding-top: 0rem;
+}
+
+.nav-bar-left .bx-search{
+    padding-top: 0.1rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+    padding-right: 0.6rem;
+}
+
+.helpIcon-Div{
+    display: none;
+}
+
+
+.nav-bar-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.nav-bar-right .account-Div{
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+    padding-top: 0.15rem;
+    
+}
+
+.nav-bar-right .account-Div .bx-user{
+    width: 0.9rem;
+}
+
+.nav-bar-right .cartIcon-Div{
+    font-size: 1.5rem;
+    padding-top: 0.15rem;
+    padding-left: 0.5rem;
+}
+
+.categoryList {
+    background-color: #0F3370;
+}
+
+.categoryList ul{
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background-color: #164492; 
+    width: 70%;
+    
+}
+
+.categoryList ul .category{
+    padding-left: 6rem;
+}
+
+.categoryList ul li {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: aliceblue;
+}
+
+.categoryList ul li i{
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+}
+
+
+.categoryInfoText{
+    display: none;
+}
