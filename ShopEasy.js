@@ -97,4 +97,4 @@ function goToCart(){
     window.location.href = "ShopEasyAC.html";
 }
 
-new ChannelMergerNode
+// new ChannelMergerNode
