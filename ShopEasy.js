@@ -96,3 +96,5 @@ products.forEach(product => {
 function goToCart(){
     window.location.href = "ShopEasyAC.html";
 }
+
+new ChannelMergerNode
