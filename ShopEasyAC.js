@@ -1,3 +1,9 @@
+const myUsername = document.querySelector(".username");
+const user = JSON.parse(localStorage.getItem("Username")) || "";
+// console.log(user);
+const capitalized = user.charAt(0).toUpperCase() + user.slice(1);
+myUsername.textContent = capitalized;
+
 //display of selected product
 const selectedProduct = JSON.parse(localStorage.getItem("selectedProduct"));
 
@@ -45,6 +51,22 @@ function goToCart(){
     window.location.href = "ShopEasyAC.html";
 }
 
+function sendReceipt(){
+    (function(){
+        emailjs.init("Tj-TaXdZQfkupje8L");
+
+    })();
+
+    // var params = {
+    //         username: 
+    //         productName:
+    //         productPrice:
+    //         productQuantity:
+    //         productTotalPrice:
+    //         productDesc:
+    //         emailAddress:
+    // }
+}
 function goToHome(){
     window.location.href = "ShopEasy.html";
 }
