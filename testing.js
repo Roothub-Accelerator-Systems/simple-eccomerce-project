@@ -189,7 +189,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Add click event to store selected product and navigate
         productDiv.onclick = function () {
             localStorage.setItem("selectedProduct", JSON.stringify(product));
-            window.location.href = "shopeasyprodet.html";
+            window.location.href = "shopeasyprodetmobile.html";
         };
 
         productDiv.appendChild(productImg);
@@ -219,5 +219,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function goToCart(){
-    window.location.href = "shopeasyac.html";
+    window.location.href = "shopeasyacmobile.html";
 }
