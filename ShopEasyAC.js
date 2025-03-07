@@ -57,16 +57,23 @@ function sendReceipt(){
 
     })();
 
-    // var params = {
-    //         username: 
-    //         productName:
-    //         productPrice:
-    //         productQuantity:
-    //         productTotalPrice:
-    //         productDesc:
-    //         emailAddress:
-    // }
+    var params = {
+            username: capitalized,
+            productName:selectedProduct.Name,
+            productPrice:selectedProduct.price,
+            productQuantity:productQuantity,
+            productTotalPrice:4,
+            productDesc:selectedProduct.desc,
+            emailAddress:JSON.parse(localStorage.getItem("Email Address")),
+    };
+
+    emailjs.send("service_uii0qj9", "template_iwu2fal", params)
+    .then( res => {
+        alert("Email sent successfully!");
+    })
+    .catch();
 }
+
 function goToHome(){
     window.location.href = "ShopEasy.html";
 }
