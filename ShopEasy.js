@@ -1,5 +1,5 @@
 const categoryText = document.querySelector(".categoryInfoText");
-const categoryImage = document.querySelector(".categoryInfo");
+const categoryImage = document.querySelector(".categoryInfoImg");
 const categoryList = document.querySelector(".categoryList");
 
 const myUsername = document.querySelector(".username");
@@ -8,54 +8,55 @@ const user = JSON.parse(localStorage.getItem("Username")) || "";
 const capitalized = user.charAt(0).toUpperCase() + user.slice(1);
 myUsername.textContent = capitalized;
 
-//  categoryList.forEach(category => {
-//     categoryList.addEventListener("mouseover", function(){
-//         categoryImage.style.display = "none";
-//         categoryText.style.display = "flex";
-//     });
+//hovering overcategory list
+categoryList.addEventListener("mouseover", function(){
+    categoryImage.style.display = "none";
+    categoryText.style.display = "flex";
+});
 
-//     categoryList.addEventListener("mouseout", function(){
-//         categoryImage.style.display = "block";
-//         categoryText.style.display = "none";
-//     }); up ratatouolle monster inc finding nemo incredibles son of big foot good dinosaur
-// //  });
+categoryList.addEventListener("mouseout", function(){
+    categoryImage.style.display = "block";
+    categoryText.style.display = "none";
+}); 
+    // up ratatouolle monster inc finding nemo incredibles son of big foot good dinosaur
+//  });
 
 const products = [
     {
         Name:"NeoFrame UHD Smart TV",
         price:"₦980,000",
-        image:"SEimages/tv1.jpg",
+        image:"SEimages/tv.avif",
         desc: "Smart TV – Access Netflix, YouTube, Prime Video, and more Full HD / 4K Resolution (if applicable) – Crystal-clear picture quality Built-in WiFi – Stream content effortlessly"
     },
     {
         Name:"StrideX Pro Sneakers",
         price: "₦250,000",
-        image:"SEimages/shoes1.webp",
+        image:"SEimages/sneakers.webp",
         desc: "Premium mesh for breathability Anti-slip rubber sole for all-day grip Perfect for casual wear, gym, or running"
     },
     {
         Name:" The Silent Patient",
         price:"₦100,000",
-        image:"SEimages/book1.jpeg",
+        image:"SEimages/courtbook.avif",
         desc: "Proven strategies to improve focus & productivity Real-life success stories & lessons Step-by-step guides to master new skills"
     
     },
     {
         Name:"Velora Reserve Red Wine",
         price:"₦1,980,000",
-        image:"SEimages/wine1.jpeg",
+        image:"SEimages/chianti.avif",
         desc: "Full-bodied with a hint of dark berries Smooth oak finish with a velvety texture Pairs beautifully with steaks, pasta & cheese"
     },
     {
         Name:"FlexFit Seamless Gym Set",
         price:"₦350,000",
-        image:"SEimages/womengym2.jpeg",
+        image:"SEimages/gymset.avif",
         desc: "High-waist leggings for tummy control Breathable sports bra with full support Quick-dry & ultra-stretch fabri"
     },
     {
         Name:"PulseX 2.0 Smartwatch",
         price:"₦4,000",
-        image:"SEimages/smartwatch1.webp",
+        image:"SEimages/smartwatch.avif",
         desc: "Heart Rate & Sleep Monitoring Step Counter & Fitness Tracking Sync Calls & Messages"
     }
 ]
