@@ -33,7 +33,13 @@ document.addEventListener("DOMContentLoaded", function () {
     plusBtn.addEventListener("click", () => updateQuantity(1));
     minusBtn.addEventListener("click", () => updateQuantity(-1));
 
+    
+    window.onload = function () {
+        document.getElementById("quantity").value = 1; // Set default quantity to 1
+    };
+
 });
+
 
 function addToCart(){
     window.location.href = "ShopEasyAC.html";

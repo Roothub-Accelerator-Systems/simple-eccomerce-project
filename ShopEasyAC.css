@@ -201,6 +201,8 @@ body{
 
 .productDetails{
     margin-left:10px;
+    display:flex;
+    flex-direction: column;
 }
 
 .productDetails h5{
@@ -209,7 +211,7 @@ body{
 
 .productDetails h6{
     font-size: 0.9rem;
-    margin-top: 3px;
+    margin-top: 6px;
 }
 
 .cartProductCounter{
