@@ -8,10 +8,14 @@ myUsername.textContent = capitalized;
 //account dropdown fucntionality
 const accountDiv = document.querySelector(".accountIcon-Div2");
 const accDropdown = document.querySelector(".accDropDown");
+const dropdownIcon = document.querySelectorAll(".bx-chevron-down");
 
 document.addEventListener("click", function(e){
    accountDiv.addEventListener("click", function(){
     accDropdown.classList.toggle("accountDropdown");
+    dropdownIcon
+    dropdownIcon.classList.add("bx-chevron-up");
+    dropdownIcon.classList.remove("bx-chevron-up");
     e.stopPropagation();
    });
 

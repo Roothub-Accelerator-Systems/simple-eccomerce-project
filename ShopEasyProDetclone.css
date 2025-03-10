@@ -12,23 +12,25 @@
 
 body{
     /* background-color: #152238; */
-    margin:0 2%;
+    /* margin:0 2%; */
     font-family: "Roboto", serif;
-    font-style: normal
+    font-style: normal;
+    padding-bottom: 10px;
+    background-color: rgb(243, 239, 239);
 }
 
 .content{
-
 }
 
 .nav-bar{
     display:flex;
-    gap:30px;
+    gap: 10px;
     align-items: center;
     background-color:white;
+    margin:1% 0;
+    justify-content: center;
     position:sticky;
     top:0;
-    /* border-bottom: 1px solid grey; */
 }
 
 .nav-bar-left{
@@ -121,10 +123,15 @@ body{
     color:var(--primary-color);
 }
 
+.nav-tracker{
+    margin:0 2%;
+}
+
 .product{
     display:flex;
+    margin:0 2%;
     margin:30px 0;
-    gap:60px;
+    gap:100px;
     /* background-color: pink; */
 }
 
@@ -315,4 +322,18 @@ body{
     font-size: 0.85rem;
     color:rgb(114, 110, 110);
     font-weight: 600;
+}
+
+.successAlertDiv{
+    background-color:var(--primary-color);
+    color:white;
+    width:20rem;
+    padding:0 10px;
+    display:flex;
+    /* justify-content: center; */
+    align-items: center;
+    height:5rem;
+    font-size: 1.1rem;
+    visibility:hidden;
+    margin:0 2%;
 }

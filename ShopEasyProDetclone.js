@@ -42,7 +42,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function addToCart(){
-    window.location.href = "ShopEasyAC.html";
+    const successBtn = document.querySelector(".successAlertDiv");
+    successBtn.style.visibility = "visible";
 }
 
 function goToCart(){
