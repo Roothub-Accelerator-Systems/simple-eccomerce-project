@@ -1,14 +1,32 @@
-const categoryText = document.querySelector(".categoryInfoText");
-const categoryImage = document.querySelector(".categoryInfoImg");
-const categoryList = document.querySelector(".categoryList");
-
+//username from signup page
 const myUsername = document.querySelector(".username");
 const user = JSON.parse(localStorage.getItem("Username")) || "";
 // console.log(user);
 const capitalized = user.charAt(0).toUpperCase() + user.slice(1);
 myUsername.textContent = capitalized;
 
-//hovering overcategory list
+//account dropdown fucntionality
+const accountDiv = document.querySelector(".accountIcon-Div2");
+const accDropdown = document.querySelector(".accDropDown");
+
+document.addEventListener("click", function(e){
+   accountDiv.addEventListener("click", function(){
+    accDropdown.classList.toggle("accountDropdown");
+    e.stopPropagation();
+   });
+
+   document.addEventListener("click", function(e){
+    if(!accountDiv.contains(e.target) && !accDropdown.contains(e.target)){
+        accDropdown.classList.remove("accountDropdown");
+    }
+   })
+})
+
+//hovering over category list
+const categoryText = document.querySelector(".categoryInfoText");
+const categoryImage = document.querySelector(".categoryInfoImg");
+const categoryList = document.querySelector(".categoryList");
+
 categoryList.addEventListener("mouseover", function(){
     categoryImage.style.display = "none";
     categoryText.style.display = "flex";
@@ -21,6 +39,7 @@ categoryList.addEventListener("mouseout", function(){
     // up ratatouolle monster inc finding nemo incredibles son of big foot good dinosaur
 //  });
 
+//dynmaic products display
 const products = [
     {
         Name:"NeoFrame UHD Smart TV",
@@ -94,8 +113,7 @@ products.forEach(product => {
     productContainer.appendChild(productDiv);
 })
 
+//cart icon button
 function goToCart(){
     window.location.href = "ShopEasyAC.html";
 }
-
-// new ChannelMergerNode

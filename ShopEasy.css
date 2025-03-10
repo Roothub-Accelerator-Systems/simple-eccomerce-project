@@ -79,7 +79,7 @@ body{
     display: flex;
     /* background-color: green; */
     margin:2rem 0;
-    gap: 4px;
+    gap: 6px;
     justify-content: center;
     align-items: center;
     white-space: nowrap; 
@@ -106,25 +106,31 @@ body{
     padding:0.5rem 0 0 0;
 }
 
-.accountIcon-Div, .cartIcon-Div, .helpIcon-Div{
-   display: flex;
+.accountIcon-Div2, .cartIcon-Div, .helpIcon-Div2{
+    display: flex;
     font-size: 1.2rem;
-    gap:4px;
     align-items: center;
+    gap:6px;
 }
 
-.accountIcon-Div{
-    /* Prevents text from wrapping  */
-    /* min-width: 50px;  */
-    /* Ensures a small width  */
-    /* max-width: 200px;   */
-    /* Prevents it from getting too big  */
-    /* overflow: hidden;
-    text-overflow: ellipsis;
-    position:relative; */
+.helpIcon-Div2 span{
+    font-size: 1.6rem;
 }
 
-.accountDropdown{
+.accountIcon-Div2:hover{
+    color:var(--primary-color);
+}
+
+.cartIcon-Div:hover{
+    color:var(--primary-color);
+}
+
+.helpIcon-Div2:hover{
+    color:var(--primary-color);
+}
+
+.accDropDown{
+    display:none;
     position:absolute;
     top:80px;
     width:15rem;
@@ -134,6 +140,10 @@ body{
     z-index: 1;
     background-color: white;
     cursor:pointer;
+}
+
+.accountDropdown{
+    display:block;
 }
 
 .accountDropdown:hover{
@@ -163,22 +173,6 @@ body{
 
 .accountDropdown i{
     font-size: 1.05rem;
-}
-
-.accountIcon-Div:hover{
-    color:var(--primary-color);
-}
-
-.cartIcon-Div:hover{
-    color:var(--primary-color);
-}
-
-.helpIcon-Div:hover{
-    color:var(--primary-color);
-}
-
-.accountDropdown{
-
 }
 
 .categorySection{
