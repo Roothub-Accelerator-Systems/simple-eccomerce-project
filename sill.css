@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
 *{
     margin:0;
     padding:0;
@@ -11,33 +9,25 @@
 }
 
 body{
-    /* background-color: #0b1f42; */
-    /*  */
     font-family: "Roboto", serif;
     font-style: normal;
     background-color: rgb(243, 239, 239);
 }
 
-/* .container{
-    margin:0 2%;
-} */
 
 .nav-bar{
     display:flex;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
     background-color:white;
-    margin:1% 0;
-    justify-content: center;
-    position:sticky;
-    top:0;
+    margin:1% 3% 1% 3.6%;
+    border-bottom: 1px solid grey;   
 }
 
 .nav-bar-left{
-    /* background-color: pink; */
     display: flex;
     justify-content: start;
-
+    align-content: center;
 }
 
 .nav-bar-left img{
@@ -47,8 +37,7 @@ body{
 
 .searchContainer{
     position:relative;
-    padding-right: 3rem;
-    /* background:red; */
+    padding-right: 30rem;
 }
 
 .nav-bar-left input{
@@ -67,7 +56,7 @@ body{
     position:absolute;
     width:2.5rem;
     height:2.5rem;
-    display:grid;
+    display:flex;
     place-content: center;
     border-radius: 0 5px 5px 0;
     top:30%;
@@ -79,15 +68,18 @@ body{
     color:white;
 }
 
+.nav-bar-left .bx-menu{
+    display: none;
+}
+
 .nav-bar-right{
     display: flex;
-    /* background-color: green; */
     margin:2rem 0;
-    gap: 6px;
+    gap: 4px;
     justify-content: center;
     align-items: center;
     white-space: nowrap; 
-    padding-left:6rem;
+    
 }
 
 .nav-bar-right .bx{
@@ -110,18 +102,16 @@ body{
     padding:0.5rem 0 0 0;
 }
 
-.accountIcon-Div2, .cartIcon-Div, .helpIcon-Div2{
-    display: flex;
+.accountIcon-Div, .cartIcon-Div, .helpIcon-Div{
+   display: flex;
     font-size: 1.2rem;
+    gap:4px;
     align-items: center;
-    gap:6px;
 }
 
-.helpIcon-Div2 span{
-    font-size: 1.6rem;
-}
 
-.accountIcon-Div2:hover{
+
+.accountIcon-Div:hover{
     color:var(--primary-color);
 }
 
@@ -129,81 +119,28 @@ body{
     color:var(--primary-color);
 }
 
-.helpIcon-Div2:hover{
+.helpIcon-Div:hover{
     color:var(--primary-color);
-}
-
-.accDropDown{
-    display:none;
-    position:absolute;
-    top:80px;
-    width:15rem;
-    border-radius: 5px;
-    height:auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    background-color: white;
-    cursor:pointer;
-}
-
-.accountDropdown{
-    display:block;
-}
-
-.accountDropdown:hover{
-    color:black;
-}
-
-.accountDropdown p{
-    padding:10px 7px;
-    display:flex;
-    align-items: center;
-    gap:15px;
-    font-size: 1.05rem;
-}
-
-.accountDropdown p:first-child{
-    border-radius:5px 5px 0 0;
-}
-
-.accountDropdown p:last-child{
-    border-radius:0 0 5px 5px;
-}
-
-.accountDropdown p:hover{
-    background-color: rgb(190, 187, 187);
-    font-weight: 500;
-}
-
-.accountDropdown i{
-    font-size: 1.05rem;
 }
 
 .categorySection{
     display: flex;
-    /* padding:10px 0 10px 19px; */
-    /* background-color: pink; */
     gap:25px;
     width:93.2%;
     margin:0 3.7%;
 }
 
-.categoryList{
-    /* background:var(--primary-color);
-    height:auto; */
 
-}
 
 .categoryList ul{
     list-style-type: none;
     color:white;
     height:auto;
     width:15rem;
-    height:100%;
     padding:10px 7px;
     background:var(--primary-color);
     border-radius: 5px;
-    padding-left: 0.8rem;
+    padding-left: 1.4rem;
 }
 
 .categoryList i{
@@ -228,7 +165,6 @@ body{
 .categoryInfo{
     width:100%;
     /* background-color: red; */
-    height:100%;
 }
 
 .categoryInfo img{
@@ -270,7 +206,7 @@ body{
     padding: 1rem;
     color:white;
     /* width:93.2%;*/
-    margin:25px 3.7% 19px;
+    margin:25px 3.3% 19px;
     width:fit-content;
 }
 
@@ -284,12 +220,11 @@ body{
     gap:15px;
     align-items: center;
     padding:10px 2.5rem 0 0.3rem;
-    /* width:5rem; */
 }
 
 .firstSection-Products img{
-    width: 13rem;
-    height: 13rem;
+    width: 17rem;
+    height: 17rem;
     object-fit: contain;
 }
 
@@ -310,7 +245,7 @@ footer {
     background-color: #333;
     color: white;
     padding: 40px 0;
-    margin:40px 0 0;
+    margin: 40px 0 0;
     /*background-color: red; */
 }
 
@@ -320,7 +255,7 @@ footer {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: auto;
-}
+} 
 
 .footer-section {
     width: 22%;
@@ -963,5 +898,4 @@ footer {
 }
 
 }
-  
   
