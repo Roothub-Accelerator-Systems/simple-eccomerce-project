@@ -35,12 +35,34 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
     window.onload = function () {
-        document.getElementById("quantity").value = 1; // Set default quantity to 1
+        // document.getElementById("quantity").value = 1; // Set default quantity to 1
     };
 
 });
 
+function addToCart() {
+    let alertBox = document.querySelector(".successAlertDiv");
 
+    // Get the user's current scroll position
+    let scrollY = window.scrollY || window.pageYOffset;
+
+    // Set the alert position at the bottom of the visible screen
+    alertBox.style.top = (scrollY + window.innerHeight - 100) + "px";
+
+    // Show the alert
+    alertBox.classList.add("show");
+
+    alertBox.style.position = "fixed";
+    alertBox.style.top = "auto";
+    alertBox.style.bottom = "20px";
+}
+
+const closeBtn = document.querySelector(".closeBtn")
+
+closeBtn.addEventListener("click", function(){
+    document.querySelector(".successAlertDiv").classList.remove("show");
+})
+    
 
 function goToCart(){
     window.location.href = "ShopEasyAC.html";
