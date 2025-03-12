@@ -41,10 +41,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-function addToCart(){
-    const successBtn = document.querySelector(".successAlertDiv");
-    successBtn.style.visibility = "visible";
-}
 
 function goToCart(){
     window.location.href = "ShopEasyAC.html";

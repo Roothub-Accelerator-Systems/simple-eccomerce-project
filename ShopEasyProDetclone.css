@@ -326,14 +326,32 @@ body{
 
 .successAlertDiv{
     background-color:var(--primary-color);
-    color:white;
-    width:20rem;
-    padding:0 10px;
-    display:flex;
-    /* justify-content: center; */
-    align-items: center;
-    height:5rem;
-    font-size: 1.1rem;
-    visibility:hidden;
+    position: fixed;
+    bottom: 20px; 
+    right: 40px; /* Start off-screen */
+    color: white;
     margin:0 2%;
+    padding: 10px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 20rem;
+    transition: right 0.5s ease-in-out;
+    height:5rem;
+}
+
+/* Popup Container */
+/* Show Popup */
+.popup.show {
+      /* Slide into view */
+}
+
+/* Close Button */
+.closeBtn {
+    /* position: absolute;
+    top: 5px;
+    right: 10px; */
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
 }
