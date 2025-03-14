@@ -121,3 +121,8 @@ products.forEach(product => {
 function goToCart(){
     window.location.href = "ShopEasyAC.html";
 }
+
+//directing to electronics page
+function goToElectronics(){
+    window.location.href = "ShopEasyElect.html";
+}
