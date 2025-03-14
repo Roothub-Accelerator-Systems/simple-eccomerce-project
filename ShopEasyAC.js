@@ -4,6 +4,27 @@ const user = JSON.parse(localStorage.getItem("Username")) || "";
 const capitalized = user.charAt(0).toUpperCase() + user.slice(1);
 myUsername.textContent = capitalized;
 
+//account dropdown fucntionality
+const accountDiv = document.querySelector(".accountIcon-Div2");
+const accDropdown = document.querySelector(".accDropDown");
+const dropdownIcon = document.querySelectorAll(".bx-chevron-down");
+
+document.addEventListener("click", function(e){
+   accountDiv.addEventListener("click", function(){
+    accDropdown.classList.toggle("accountDropdown");
+    dropdownIcon
+    dropdownIcon.classList.add("bx-chevron-up");
+    dropdownIcon.classList.remove("bx-chevron-up");
+    e.stopPropagation();
+   });
+
+   document.addEventListener("click", function(e){
+    if(!accountDiv.contains(e.target) && !accDropdown.contains(e.target)){
+        accDropdown.classList.remove("accountDropdown");
+    }
+   })
+})
+
 //display of selected product
 const selectedProduct = JSON.parse(localStorage.getItem("selectedProduct"));
 

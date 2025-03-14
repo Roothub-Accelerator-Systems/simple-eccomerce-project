@@ -92,10 +92,12 @@ body{
 
 .nav-bar-right .bx{
     font-size:1.8rem;
+    padding-bottom:0.3rem;
 }
 
-.nav-bar-right .bx-cart{
-    font-size: 1.95rem;
+.nav-bar-right .bx-user{
+    font-size: 1.8rem;
+    padding-bottom:0.5rem;
 }
 
 .nav-bar-right .bx-question-mark{
@@ -103,23 +105,23 @@ body{
 }
 
 .nav-bar-right h4{
-    padding-top:0.5rem;
+    /* padding-top:0.5rem; */
 }
 
 .nav-bar-right .bx-chevron-down{
-    padding:0.5rem 0 0 0;
+    padding-top:0.2rem;
 }
 
 .accountIcon-Div2, .cartIcon-Div, .helpIcon-Div2{
     display: flex;
     font-size: 1.2rem;
     align-items: center;
-    gap:6px;
+    gap:3px;
 }
 
-.helpIcon-Div2 span{
+/* .helpIcon-Div2 span{
     font-size: 1.6rem;
-}
+} */
 
 .accountIcon-Div2:hover{
     color:var(--primary-color);
@@ -152,6 +154,7 @@ body{
 
 .accountDropdown:hover{
     color:black;
+    /* font-weight: 600; */
 }
 
 .accountDropdown p{
@@ -159,7 +162,7 @@ body{
     display:flex;
     align-items: center;
     gap:15px;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
 }
 
 .accountDropdown p:first-child{
@@ -172,11 +175,11 @@ body{
 
 .accountDropdown p:hover{
     background-color: rgb(190, 187, 187);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .accountDropdown i{
-    font-size: 1.05rem;
+    font-size: 20rem;
 }
 
 .categorySection{
@@ -380,6 +383,10 @@ footer {
     padding-top: 10px;
     border-top: 1px solid #555;
     font-size: 1;
+}
+
+.nav-bar-left .bx-menu{
+    display: none;
 }
 
 @media only screen and (max-width: 390px) {
@@ -738,7 +745,7 @@ footer {
         padding-top: 0.15rem;
         padding-left: 1.5rem;
         font-size: 1.75rem;
-        padding-right: 0.6rem;
+        /* padding-right: 0.6rem; */
     }
     
     .helpIcon-Div{
@@ -749,36 +756,37 @@ footer {
     .nav-bar-right{
         display: flex;
         align-items: center;
-        justify-content: space-around ;
+        /* justify-content: space-around ; */
         margin: 0;
+        width:fit-content;
         gap: 0px;
-        padding-right: 4%;
-
+        /* padding-right: 4%; */
+        /* background-color: red; */
     }
     
-    .nav-bar-right .accountIcon-Div{
+    .nav-bar-right .accountIcon-Div2{
         font-size: 1.5rem !important;
-        padding-left: 0.5%;
+        /* padding-left: 0.5%; */
         padding-top: 0.10%;
         
     }
     
-    .nav-bar-right .accountIcon-Div .bx-user{
+    .nav-bar-right .accountIcon-Div2 .bx-user{
         width: 0.9rem;
     }
     
-    .nav-bar-right .accountIcon-Div h4{
+    .nav-bar-right .accountIcon-Div2 h4{
         display: none;
     }
     
-    .nav-bar-right .cartIcon-Div{
+    .nav-bar-right .cartIcon-Div2{
         display: flex;
         flex-direction: column;
         gap: 0px;
         align-items: normal;
         font-size: 1.5rem;
         padding-top: 0.10rem;
-        padding-left: 0.5rem;
+        /* padding-left: 0.5rem; */
     }
     
     .nav-bar-right .cartIcon-Div h4{

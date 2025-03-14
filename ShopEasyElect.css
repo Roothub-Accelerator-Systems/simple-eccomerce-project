@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#0f3370;
+}
+
+body{
+    /* background-color: #0b1f42; */
+    /*  */
+    font-family: "Roboto", serif;
+    font-style: normal;
+    background-color: rgb(243, 239, 239);
+    /* padding:20px; */
+}
+
+/* .container{
+    margin:0 2%;
+} */
+
+.nav-bar{
+    display:flex;
+    gap: 10px;
+    align-items: center;
+    background-color:white;
+    margin:1% 0;
+    justify-content: center;
+    position:sticky;
+    top:0;
+}
+
+.nav-bar-left{
+    /* background-color: pink; */
+    display: flex;
+    justify-content: start;
+
+}
+
+.nav-bar-left img{
+    width:250px;
+    height:100px;
+}
+
+.searchContainer{
+    position:relative;
+    padding-right: 3rem;
+    /* background:red; */
+}
+
+.nav-bar-left input{
+    width:37rem;
+    height:2.5rem;
+    border:1px solid grey;
+    outline:none;
+    margin:30px 38px 0 40px;
+    border-radius: 5px;
+    padding:5px;
+    position:relative;
+}
+
+.searchIconDiv{
+    background:var(--primary-color);
+    position:absolute;
+    width:2.5rem;
+    height:2.5rem;
+    display:grid;
+    place-content: center;
+    border-radius: 0 5px 5px 0;
+    top:30%;
+    left:595px;
+}
+
+.searchIcon{
+    font-size:1.3rem;
+    color:white;
+}
+
+.nav-bar-right{
+    display: flex;
+    /* background-color: green; */
+    margin:2rem 0;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap; 
+    padding-left:6rem;
+}
+
+.nav-bar-right .bx{
+    font-size:1.8rem;
+    padding-bottom:0.3rem;
+}
+
+.nav-bar-right .bx-user{
+    font-size: 1.8rem;
+    padding-bottom:0.5rem;
+}
+
+.nav-bar-right .bx-question-mark{
+    font-size:1.7rem;
+}
+
+.nav-bar-right h4{
+    /* padding-top:0.5rem; */
+}
+
+.nav-bar-right .bx-chevron-down{
+    padding-top:0.2rem;
+}
+
+.accountIcon-Div2, .cartIcon-Div, .helpIcon-Div2{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    gap:3px;
+}
+
+/* .helpIcon-Div2 span{
+    font-size: 1.6rem;
+} */
+
+.accountIcon-Div2:hover{
+    color:var(--primary-color);
+}
+
+.cartIcon-Div:hover{
+    color:var(--primary-color);
+}
+
+.helpIcon-Div2:hover{
+    color:var(--primary-color);
+}
+
+.accDropDown{
+    display:none;
+    position:absolute;
+    top:80px;
+    width:15rem;
+    border-radius: 5px;
+    height:auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: white;
+    cursor:pointer;
+}
+
+.accountDropdown{
+    display:block;
+}
+
+.accountDropdown:hover{
+    color:black;
+    /* font-weight: 600; */
+}
+
+.accountDropdown p{
+    padding:10px 7px;
+    display:flex;
+    align-items: center;
+    gap:15px;
+    font-size: 1.1rem;
+}
+
+.accountDropdown p:first-child{
+    border-radius:5px 5px 0 0;
+}
+
+.accountDropdown p:last-child{
+    border-radius:0 0 5px 5px;
+}
+
+.accountDropdown p:hover{
+    background-color: rgb(190, 187, 187);
+    font-weight: 600;
+}
+
+.accountDropdown i{
+    font-size: 20rem;
+}
+
+.electronicsList{
+    background: white;
+    border-radius: 5px;
+    padding:20px 0;
+    margin:1% 5%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    gap:770px;
+    align-items: center;
+    /* padding: 10px; */
+    margin-bottom: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
