@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShopEasy</title>
-    <link rel="stylesheet" href="ShopEasyProDet.css">
+    <link rel="stylesheet" href="ShopEasyProDetclone.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="SEimages/shopeasylogobg2.png" type="image/x-icon">
 </head>
@@ -12,6 +12,7 @@
     <div class="container">
         <div class="content">
             <div class="nav-bar">
+
                 <div class="nav-bar-left">
                     <img src="SEimages/logobg.png" alt="ShopEasyLogo">
                     <div class="searchContainer">
@@ -21,23 +22,36 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="nav-bar-right">
                     <div class="accountIcon-Div">
-                        <i class="bx bx-user"></i>
-                        <h4>Hi Dara</h4>
-                        <i class='bx bx-chevron-down'></i>
+                        <div class="accountIcon-Div2">
+                            <i class="bx bx-user"></i>
+                            <h4>Hi <span class="username"></span></h4>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                         <div class="accDropDown">
+                            <p><i class='bx bx-user'></i>My Profile</p>
+                            <p><i class='bx bx-package'></i>My Orders</p>
+                            <p><i class='bx bx-heart'></i>My Saved Items</p>
+                            <p><i class='bx bx-map-pin'></i>Track my Order</p>
+                            <p><i class='bx bx-log-out'></i>Logout</p>
+                        </div> 
                     </div>
                     <div class="helpIcon-Div">
-                        <i class='bx bx-question-mark'></i>
-                        <h4>Help</h4>
-                        <i class='bx bx-chevron-down'></i>
+                        <div class="helpIcon-Div2">
+                            <!-- <i class="bx bx-question-mark"></i> -->
+                            <h4>Help</h4>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
                     </div>
-                    <div class="cartIcon-Div">
+                    <div class="cartIcon-Div" onclick="goToCart()">
                         <i class='bx bx-cart'></i>
-                        <h4 onclick="goToCart()">Cart</h4>
+                        <h4>Cart</h4>
                     </div>
                 </div>
             </div>
+
             <div class="nav-tracker">
                 <h4>hnrjgjkv > fjnrigkig > fungujf84 > g4ijgujf</h4>
             </div>
@@ -55,11 +69,11 @@
                 </div>
                 <div class="productDetails">
                     <div class="productDetails-Section1 productDetails-Section">
-                        <h3 class="productDetails-Section1h3"></h3>
+                        <h1 class="productDetails-Section1h3"></h1>
                         <p class="productDetails-Section1Desc"></p>
                     </div>
                     <div class="productDetails-Section2 productDetails-Section">
-                        <h3 class="productDetails-Section2Price"></h3>
+                        <h2 class="productDetails-Section2Price"></h2>
                         <p>Suggested Payments with 8 months special handling</p>
                     </div>
                     <div class="productDetails-Section3 productDetails-Section">
@@ -76,7 +90,6 @@
                         </div>
                         <div class="ctaBtns">
                             <button>Buy Now</button>
-                            <!-- LINK TO CART SUBMISSION -->
                             <button onclick="addToCart()">Add to Cart</button>
                         </div>
                     </div>
@@ -86,11 +99,11 @@
                                 <i class='bx bxs-truck'></i>
                                 <h4>Free Delivery</h4>  
                             </div>
-                            <a href="" class="miniText">Enter your Postal code for Delivery Availability</a>
+                            <p class="miniText">Enter your Postal code for Delivery Availability</p>
                         </div>
                         <div class="returnDelivery">
                             <div class="DeliveryTop">
-                                <i class='bx bx-notepad'></i>
+                                <i class='bx bxs-notepad'></i>
                                 <h4>Return Delivery</h4>
                             </div>
                             <p class="miniText">Free 30 Days Delivery Return <a href="">Details</a></p>
@@ -98,9 +111,82 @@
                     </div>
                 </div>
             </div>
+            <footer>
+                <div class="footerContainer">
+                    <div class="footer-section">
+                        <h3>NEED HELP?</h3>
+                        <ul>
+                            <li><a href="#">Chat with us</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>USEFUL LINKS</h3>
+                        <ul>
+                            <li><a href="#">Service Center</a></li>
+                            <li><a href="#">How to shop on ShopEasy</a></li>
+                            <li><a href="#">Delivery options and timelines</a></li>
+                            <li><a href="#">Return & Refund Timeline</a></li>
+                            <li><a href="#">Pickup Stations</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>MAKE MONEY WITH SHOPEASY</h3>
+                        <ul>
+                            <li><a href="#">Sell on ShopEasy</a></li>
+                            <li><a href="#">Vendor Hub</a></li>
+                            <li><a href="#">Become a Sales Consultant</a></li>
+                            <li><a href="#">Our Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h3>SHOPEASY INTERNATIONAL</h3>
+                        <ul>
+                            <li><a href="#">Algeria</a></li>
+                            <li><a href="#">Egypt</a></li>
+                            <li><a href="#">Ghana</a></li>
+                            <li><a href="#">Kenya</a></li>
+                            <li><a href="#">Morocco</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="socials">
+                    <h3>JOIN US ON SHOPEASY</h3>
+                    <div class="icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-x-twitter"></i>
+                        <i class="fab fa-tiktok"></i>
+                    </div>
+                </div>
+
+                <div class="payments">
+                    <h3>PAYMENT METHODS & DELIVERY PARTNERS</h3>
+                    <div class="payment-logos">
+                        <img src="SEimages/mastercard.webp" alt="MasterCard">
+                        <img src="SEimages/visacard.webp" alt="VISA">
+                        <img src="SEimages/vervecard.webp" alt="Verve">
+                        
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>© SHOPEASY PAY</p>
+                </div>
+            </footer>
+            <div class="successAlertDiv">
+                <span class="closeBtn" onclick="closeAlert()">&times;</span>
+                <p>Product added to cart successfully!</p>
+            </div>
         </div>
     </div>
 
-    <script src="ShopEasyProDet.js"></script>
+    <script src="ShopEasyProDetclone.js"></script>
 </body>
 </html>

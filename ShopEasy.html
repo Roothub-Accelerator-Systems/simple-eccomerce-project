@@ -10,11 +10,10 @@
 </head>
 <body>
     <div class="container">
-        <div class="content">
-
             <div class="nav-bar">
-
+                <!-- <img src="SEimages/smartwatch.avif" alt=""> -->
                 <div class="nav-bar-left">
+                    <i class='bx bx-menu' id="menuIcon"></i>
                     <img src="SEimages/logobg.png" alt="ShopEasyLogo">
                     <div class="searchContainer">
                         <input type="text" placeholder="Search ShopEasy" class="nav-bar-input">
@@ -26,37 +25,41 @@
 
                 <div class="nav-bar-right">
                     <div class="accountIcon-Div">
-                        <i class="bx bx-user"></i>
-                        <h4>Hi <span class="username"></span></h4>
-                        <i class='bx bx-chevron-down'></i>
-                         <!-- <div class="accountDropdown">
+                        <div class="accountIcon-Div2">
+                            <i class="bx bx-user"></i>
+                            <h4>Hi <span class="username"></span></h4>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                         <div class="accDropDown">
                             <p><i class='bx bx-user'></i>My Profile</p>
                             <p><i class='bx bx-package'></i>My Orders</p>
                             <p><i class='bx bx-heart'></i>My Saved Items</p>
-                            <p>Trak my Order</p>
+                            <p><i class='bx bx-map-pin'></i>Track my Order</p>
                             <p><i class='bx bx-log-out'></i>Logout</p>
-                        </div>  -->
+                        </div> 
                     </div>
-
                     <div class="helpIcon-Div">
-                        <i class='bx bx-question-mark'></i>
-                        <h4>Help</h4>
-                        <i class='bx bx-chevron-down'></i>
+                        <div class="helpIcon-Div2">
+                            <!-- <i class="bx bx-question-mark"></i> -->
+                            <h4>Help</h4>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
                     </div>
-                    <div class="cartIcon-Div">
+                    <div class="cartIcon-Div" onclick="goToCart()">
                         <i class='bx bx-cart'></i>
-                        <h4 onclick="goToCart()">Cart</h4>
+                        <h4 >Cart</h4>
                     </div>
 
                 </div>
 
             </div>
 
+        <div class="content">
             <div class="categorySection">
                 <div class="categoryList">
                     <ul>
                         <li class="categoryListItem"><i class="bx bx-football"></i>Sports & Outdoor</li>
-                        <li class="categoryListItem"><i class="bx bx-tv"></i>Electronics</li>
+                        <li class="categoryListItem" onclick="goToElectronics()"><i class="bx bx-tv"></i>Electronics</li>
                         <li class="categoryListItem"><i class="bx bx-closet"></i>Fashion</li>
                         <li class="categoryListItem"><i class="bx bx-desktop"></i>Computers & Accessories</li>
                         <li class="categoryListItem"><i class="bx bx-home"></i>Home & Kitchen</li>
@@ -162,7 +165,7 @@
                         <h3>USEFUL LINKS</h3>
                         <ul>
                             <li><a href="#">Service Center</a></li>
-                            <li><a href="#">How to shop on Jumia?</a></li>
+                            <li><a href="#">How to shop on ShopEasy</a></li>
                             <li><a href="#">Delivery options and timelines</a></li>
                             <li><a href="#">Return & Refund Timeline</a></li>
                             <li><a href="#">Pickup Stations</a></li>
@@ -216,6 +219,7 @@
                     <p>© SHOPEASY PAY</p>
                 </div>
             </footer>
+            
         </div>
     </div>
 

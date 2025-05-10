@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="ShopEasyAC.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="SEimages/shopeasylogobg2.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -23,18 +24,29 @@
                 </div>
                 <div class="nav-bar-right">
                     <div class="accountIcon-Div">
-                        <i class="bx bx-user"></i>
-                        <h4>Hi Dara</h4>
-                        <i class='bx bx-chevron-down'></i>
+                        <div class="accountIcon-Div2">
+                            <i class="bx bx-user"></i>
+                            <h4>Hi <span class="username"></span></h4>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                         <div class="accDropDown">
+                            <p><i class='bx bx-user'></i>My Profile</p>
+                            <p><i class='bx bx-package'></i>My Orders</p>
+                            <p><i class='bx bx-heart'></i>My Saved Items</p>
+                            <p><i class='bx bx-map-pin'></i>Track my Order</p>
+                            <p><i class='bx bx-log-out'></i>Logout</p>
+                        </div> 
                     </div>
                     <div class="helpIcon-Div">
-                        <i class='bx bx-question-mark'></i>
-                        <h4>Help</h4>
-                        <i class='bx bx-chevron-down'></i>
+                        <div class="helpIcon-Div2">
+                            <!-- <i class="bx bx-question-mark"></i> -->
+                            <h4>Help</h4>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
                     </div>
-                    <div class="cartIcon-Div">
+                    <div class="cartIcon-Div" onclick="goToCart()">
                         <i class='bx bx-cart'></i>
-                        <h4 onclick="goToCart()">Cart</h4>
+                        <h4>Cart</h4>
                     </div>
                 </div>
             </div>
@@ -70,7 +82,7 @@
                             </div>
                             <div class="price">
                                 <p class="price1">160,000</p>
-                                <p class="price2"><span class="mainPrice">160000</span> * <span class="numberProducts">2</span> items</p>
+                                <p class="price2"><span class="mainPrice">160000</span> * <span class="numberProducts"></span> items</p>
                             </div>
                             <div class="action">
                                 <button>Remove Item</button>
@@ -86,7 +98,7 @@
                 <div class="orderSummary">
                     <div class="orderSummary1">
                         <h4>Order Summary</h4>
-                        <h4><span class="noOfProducts">1</span> item/s</h4>
+                        <h4><span class="noOfProducts"></span> item/s</h4>
                     </div>
                     <div class="orderSummary2">
                         <h5>Delivery Charges:</h5>
@@ -98,11 +110,11 @@
                     </div>
                     <div class="orderSummary4">
                         <h5>Total</h5>
-                        <h5>366489</h5>
+                        <h5 class="totalPrice">5677788</h5>
                     </div>
                     <div class="orderSummary5">
                         <h6>Excluding Delivery Charges</h6>
-                        <button>Continue to Checkout</button>
+                        <button onclick="sendReceipt()">Continue to Checkout</button>
                     </div>
                     <div class="orderSummary6">
                         <div class="top">

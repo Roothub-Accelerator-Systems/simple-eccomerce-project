@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics</title>
+    <link rel="stylesheet" href="ShopEasyElect.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="SEimages/shopeasylogobg2.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-bar">
+            <div class="nav-bar-left">
+                <!-- <i class='bx bx-menu' id="menuIcon"></i> -->
+                <img src="SEimages/logobg.png" alt="ShopEasyLogo">
+                <div class="searchContainer">
+                    <input type="text" placeholder="Search ShopEasy" class="nav-bar-input">
+                    <div class="searchIconDiv">
+                        <i class='bx bx-search-alt-2 searchIcon'></i>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="nav-bar-right">
+                <div class="accountIcon-Div">
+                    <div class="accountIcon-Div2">
+                        <i class="bx bx-user"></i>
+                        <h4>Hi <span class="username"></span></h4>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                     <div class="accDropDown">
+                        <p><i class='bx bx-user'></i>My Profile</p>
+                        <p><i class='bx bx-package'></i>My Orders</p>
+                        <p><i class='bx bx-heart'></i>My Saved Items</p>
+                        <p><i class='bx bx-map-pin'></i>Track my Order</p>
+                        <p><i class='bx bx-log-out'></i>Logout</p>
+                    </div> 
+                </div>
+                <div class="helpIcon-Div">
+                    <div class="helpIcon-Div2">
+                        <!-- <i class="bx bx-question-mark"></i> -->
+                        <h4>Help</h4>
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                </div>
+                <div class="cartIcon-Div" onclick="goToCart()">
+                    <i class='bx bx-cart'></i>
+                    <h4 >Cart</h4>
+                </div>
+    
+            </div>
+    
+        </div>
+        <div class="electronicsList">
+            <div class="header">
+                <h2>Electronics</h2>
+                <div class="sortBox">
+                    <label for="sort">Sort by:</label>
+                    <select id="sort">
+                        <option value="default">Default</option>
+                        <option value="low-high">Price: Low to High</option>
+                        <option value="high-low">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+        
+            <div id="productList"></div>
+        </div>
+    </div>
+    
+
+    <script src="ShopEsyElect.js"></script>
+</body>
+</html>

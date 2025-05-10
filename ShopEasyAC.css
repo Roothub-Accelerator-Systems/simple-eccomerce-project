@@ -12,7 +12,7 @@
 
 body{
     background-color: rgb(243, 239, 239);
-    margin:0 2%;
+    /* margin:0 2%; */
     font-family: "Roboto", serif;
     font-style: normal
 }
@@ -23,12 +23,13 @@ body{
 
 .nav-bar{
     display:flex;
-    gap:30px;
+    gap: 10px;
     align-items: center;
-    /* background-color:white; */
+    background-color:white;
+    margin:1% 0;
+    justify-content: center;
     position:sticky;
     top:0;
-    /* border-bottom: 1px solid grey; */
 }
 
 .nav-bar-left{
@@ -75,19 +76,24 @@ body{
 }
 
 .nav-bar-right{
-    display:flex;
-    
+    display: flex;
+    /* background-color: green; */
     margin:2rem 0;
-    gap:12px;
+    gap: 6px;
+    justify-content: center;
     align-items: center;
+    white-space: nowrap; 
+    padding-left:6rem;
 }
 
 .nav-bar-right .bx{
     font-size:1.8rem;
+    padding-bottom:0.3rem;
 }
 
-.nav-bar-right .bx-cart{
-    font-size: 1.95rem;
+.nav-bar-right .bx-user{
+    font-size: 1.8rem;
+    padding-bottom:0.5rem;
 }
 
 .nav-bar-right .bx-question-mark{
@@ -95,21 +101,25 @@ body{
 }
 
 .nav-bar-right h4{
-    padding-top:0.5rem;
+    /* padding-top:0.5rem; */
 }
 
 .nav-bar-right .bx-chevron-down{
-    padding:0.5rem 0 0 0;
+    padding-top:0.2rem;
 }
 
-.accountIcon-Div, .cartIcon-Div, .helpIcon-Div{
-    display:flex;
+.accountIcon-Div2, .cartIcon-Div, .helpIcon-Div2{
+    display: flex;
     font-size: 1.2rem;
-    gap:4px;
     align-items: center;
+    gap:3px;
 }
 
-.accountIcon-Div:hover{
+/* .helpIcon-Div2 span{
+    font-size: 1.6rem;
+} */
+
+.accountIcon-Div2:hover{
     color:var(--primary-color);
 }
 
@@ -117,8 +127,55 @@ body{
     color:var(--primary-color);
 }
 
-.helpIcon-Div:hover{
+.helpIcon-Div2:hover{
     color:var(--primary-color);
+}
+
+.accDropDown{
+    display:none;
+    position:absolute;
+    top:80px;
+    width:15rem;
+    border-radius: 5px;
+    height:auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background-color: white;
+    cursor:pointer;
+}
+
+.accountDropdown{
+    display:block;
+}
+
+.accountDropdown:hover{
+    color:black;
+    /* font-weight: 600; */
+}
+
+.accountDropdown p{
+    padding:10px 7px;
+    display:flex;
+    align-items: center;
+    gap:15px;
+    font-size: 1.1rem;
+}
+
+.accountDropdown p:first-child{
+    border-radius:5px 5px 0 0;
+}
+
+.accountDropdown p:last-child{
+    border-radius:0 0 5px 5px;
+}
+
+.accountDropdown p:hover{
+    background-color: rgb(190, 187, 187);
+    font-weight: 600;
+}
+
+.accountDropdown i{
+    font-size: 20rem;
 }
 
 .continueShopBtn{
@@ -201,6 +258,8 @@ body{
 
 .productDetails{
     margin-left:10px;
+    display:flex;
+    flex-direction: column;
 }
 
 .productDetails h5{
@@ -209,7 +268,7 @@ body{
 
 .productDetails h6{
     font-size: 0.9rem;
-    margin-top: 3px;
+    margin-top: 6px;
 }
 
 .cartProductCounter{
